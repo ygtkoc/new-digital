@@ -8,12 +8,50 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gemunu+Libre:wght@200..800&family=Montserrat:i
 tal,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!--Font Awesome-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+ integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <link href="./css/styles.css" rel="stylesheet">
+
+ 
+ <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <h1 class="text-3xl font-monsterrat">
-    Hello world!
-  </h1>
+<!--Header Sec.-->
+  <header class="bg-black py-12 text-vln-grey font-gemunu uppercase">
+    <!--Header İçeriği-->
+    <div class="container flex items-center justify-between space-x-16">
+      <!--Logo-->
+      <a href="#" class="text-4xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-vln-red to-vln-grey">Digital</a>
+      <!--Navigation-->
+      <nav class="flex justify-between flex-1">
+        <!--Menu-->
+        <div class="flex items-center text-lg space-x-8">
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Main Page</a>
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Works</a>
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Vision</a>
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Contact</a>
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Social Media</a>
+        </div>
+        <!--Login Area-->
+        <div class="flex items-center space-x-8">
+          <!--Search Area-->
+          <form>
+            <div class="border-r px-4 mx-4 py-1 border-vln-red group">
+              <input type="text" class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-vln-red focus:outline-none w-44">
+              <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-vln-red transition duration-500"></i></button>
+
+            </div>
+          </form>
+          <!--Signup Area-->
+          <div class="flex items-center space-x-8 text-lg">
+            <a href="#">Login</a>
+            <a href="#" class="bg-vln-red px-3 py-1 hover:bg-rose-600 hover:text-vln-grey cursor-pointer transition duration-500 ">Sign Up</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
 </body>
 </html>
