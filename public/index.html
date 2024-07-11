@@ -17,41 +17,128 @@ tal,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&
  <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-<!--Header Sec.-->
-  <header class="bg-black py-12 text-vln-grey font-gemunu uppercase">
+<!--Header Section-->
+  <header class="bg-black py-6 lg:py-12 text-vln-grey uppercase">
     <!--Header İçeriği-->
-    <div class="container flex items-center justify-between space-x-16">
+    <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
       <!--Logo-->
-      <a href="#" class="text-4xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-vln-red to-vln-grey">Digital</a>
+      <a href="#" class="pl-4 md:pl-0 text-4xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-vln-red to-vln-grey">Digital</a>
+      
+       <!--Mobile Menu-->
+       <div class="block md:hidden pr-4">
+          <div class="space-y-1 cursor-pointer">
+            <div class="bg-vln-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-vln-grey w-8 h-1 rounded-full"></div>
+            <div class="bg-vln-grey w-8 h-1 rounded-full"></div>
+          </div>
+       </div>
+
       <!--Navigation-->
-      <nav class="flex justify-between flex-1">
+      <nav class="hidden md:flex justify-between flex-1">
         <!--Menu-->
-        <div class="flex items-center text-lg space-x-8">
-          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Main Page</a>
+        <div class="flex items-center text-lg space-x-4 lg:space-x-8">
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Main</a>
           <a href="#" class="hover:text-vln-melon text-white transition duration-500">Works</a>
           <a href="#" class="hover:text-vln-melon text-white transition duration-500">Vision</a>
           <a href="#" class="hover:text-vln-melon text-white transition duration-500">Contact</a>
-          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Social Media</a>
+          <a href="#" class="hover:text-vln-melon text-white transition duration-500">Social</a>
         </div>
         <!--Login Area-->
-        <div class="flex items-center space-x-8">
+        <div class="flex items-center space-x-4 lg:space-x-8">
           <!--Search Area-->
           <form>
             <div class="border-r px-4 mx-4 py-1 border-vln-red group">
-              <input type="text" class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-vln-red focus:outline-none w-44">
+              <input type="text" class="opacity-0 group-hover:opacity-100 transition duration-500 bg-transparent border-b border-vln-red focus:outline-none w-24 lg:w-44">
               <button class="-ml-4 group-hover:ml-0 transition duration-500"><i class="fas fa-search group-hover:text-vln-red transition duration-500"></i></button>
 
             </div>
           </form>
           <!--Signup Area-->
-          <div class="flex items-center space-x-8 text-lg">
+          <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
             <a href="#">Login</a>
-            <a href="#" class="bg-vln-red px-3 py-1 hover:bg-rose-600 hover:text-vln-grey cursor-pointer transition duration-500 ">Sign Up</a>
+            <a href="#" class="bg-vln-red px-3 py-1 hover:bg-rose-600 hover:text-vln-grey cursor-pointer transition duration-500 whitespace-nowrap">Sign Up</a>
           </div>
         </div>
       </nav>
     </div>
 
   </header>
+
+  <!--Slider Section-->
+  <section class="h-128 group relative">
+    <!--Work Image-->
+    <img src="./images/mainslider1.jpg" alt="Main Image" class="h-full w-full object-cover">
+
+    <!--Work Content-->
+    <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black">
+      <!--Work Content Container-->
+      <div class="container pl-10 lg:pl-0">
+            <h3 class="text-vln-melon tracking-wider group-hover:mb-1 duration:500">
+              Lorem Ipsum
+            </h3>
+            <h1 class="text-4xl lg:text-6xl text-vln-grey group-hover:mb-1 duration-500">
+              Lorem Ipsum Lorem Ipsum
+            </h1>
+            <p class="text-vln-grey group-hover:mb-1 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quam reiciendis quos expedita dignissimos! In voluptas repudiandae, assumenda ipsum dolores maxime quo ullam fugit illum distinctio consequatur quibusdam tempora magnam!
+            </p>
+            <!--Detail Container-->
+            <div class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20 duration-1000">
+            <!--Work Slider Button-->
+            <div class="pt-5 flex space-x-2 items-center cursor-pointer">
+              <a href="#" class="text-vln-grey uppercase lg:text-lg hover:text-vln-red duration-500">Go to Page</a>
+              <div class="flex h-8 w-8 text-center items-center justify-center bg-vln-red rounded-full">
+                  <i class="fas fa-arrow-right text-vln-grey"></i>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!--Points-->
+    <div class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-1000">
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-vln-red"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-vln-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-vln-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-vln-grey"></div>
+    </div>
+  </section>
+
+  <!--Jobs Section-->
+  <section class="py-24 bg-black">
+    <!--Jobs Content-->
+      <div class="container flex space-x-16">
+        <!--Left Content-->
+        <div class="basis-2/3">
+            <!--Titles-->
+            <div class="flex space-x-2 divide-x divide-vln-red divide-opacity-50 mb-8">
+                <h2 class="text-vln-red"><a href="#">Latest</a></h2>
+                <h2 class="text-vln-grey pl-2 hover:text-vln-red transition duration:500"><a href="#">Popular</a></h2>
+                <h2 class="text-vln-grey pl-2 hover:text-vln-red transition duration:500"><a href="#">Best</a></h2>
+            </div>
+            <!--Images Container-->
+            <div class="flex flex-wrap">
+                <!--Image 1-->
+                <div class="group relative overflow-hidden basis-1/3">
+                        <!--Image-->
+                        <img src="./images/mv1.jpg" class="group-hover:scale-110 group-hover:opacity-50 duration-500">
+                        <!--Image Detail Container-->
+                        <div class="absolute px-6 bottom-8">
+                              <h3 class="text-md text-slate-700 group-hover:text-vln-melon group-hover:mb-2 duration-500">Enemy</h3>
+                              <p class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-vln-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, dolorem?</p>
+                              <!--Icons Contaiiner-->
+                              <div>
+                                  <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+                              </div>
+                        </div>
+                 </div>
+            </div>
+        </div>
+        <!--Right Content-->
+        <div class="basis-1/3 bg-blue-500">
+          
+        </div>
+      </div>
+  </section>
 </body>
 </html>

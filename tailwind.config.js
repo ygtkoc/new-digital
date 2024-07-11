@@ -24,7 +24,11 @@ module.exports = {
         'vln-melon': '#FFD369',
         'vln-grey': '#DDDDDD',
         'vln-white': '#F7F7F7',
-      }
+      },
+
+      spacing: {
+        '128': '32rem',
+      },
     },
   },
   plugins: [],
